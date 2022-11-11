@@ -253,7 +253,7 @@
 }
 
 .kaufman__triangle{
-  background-image: url(../logos/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   right: -210px;
   top: 0;
   height: 877px;
@@ -268,10 +268,13 @@
   color: white;
   padding-top: 60px;
   padding-bottom: 40px;
+  
 }
 
 .footer__column_content_copyright{
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__logo_place_footer{
@@ -290,13 +293,10 @@
 }
 
 .footer__author{
-  position: absolute;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  left: 0;
-  bottom: 18px;
-
+  padding-bottom: 0px;
 }
 
 .footer__column_content_info{
