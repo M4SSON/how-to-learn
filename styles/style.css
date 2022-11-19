@@ -29,6 +29,7 @@
   right: 0px;
   background-color: #2f80ed;
   position: absolute;
+  z-index: 0;
 }
 
 .logo{
@@ -40,6 +41,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 2;
 }
 
 .header__title{
@@ -50,16 +52,19 @@
   position: relative;
   width: 730px;
   margin: 0 64px;
+  z-index: 2;
 }
 
 .header__subtitle{
   position: absolute;
   bottom: 30px;
-  margin: 0 0 0 64px;
+  margin: 0;
+  left: 64px;
   width: 388px;
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
+  z-index: 2;
 }
 
 .header__link{
@@ -68,6 +73,7 @@
   line-height: 25px;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 2;
 }
 
 .header__main-illustration{
@@ -75,9 +81,6 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-
-.header__main_illustration{
   width: 765px;
   height: 608px;
 }
@@ -233,19 +236,23 @@
   background-color: #1f1f1f;
   padding-top: 90px;
   padding-bottom: 90px;
-  z-index: -1001;
 }
 
 .section-title_theme_dark{
   color: white;
+  margin: 0 0 20px;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark{
   color: white;
+  z-index: 2;
 }
 
 .table_theme_dark{
   z-index: 1;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .kaufman__triangle{
@@ -255,16 +262,16 @@
   height: 877px;
   width: 877px;
   position: absolute;
-  z-index: -1000;
 }
 
 .footer{
-  display: block;
+  display: flex;
   background-color: #1f1f1f;
   color: white;
   padding-top: 60px;
   padding-bottom: 40px;
   min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__column_content_copyright{
@@ -274,7 +281,7 @@
   flex-basis: 711px;
 }
 
-.logo__place_footer{
+.logo_place_footer{
   width: 228px;
   height: 32px;
 }
@@ -283,14 +290,14 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .footer__author{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
+  margin: 18px 0;
 }
 
 .footer__column_content_info{
@@ -319,21 +326,18 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  margin-bottom: 16px;
 }
 
 .footer__column-link{
   display: block;
   text-decoration: none;
   color: white;
+  margin: 0;
 }
 
 .footer__social-icon{
   height: 16px;
   width: 16px;
   margin: 0 10px 0 0;
-}
-
-.footer__column-link:last-of-type{
-  margin-bottom: 16px;
-  text-decoration: none;
 }
