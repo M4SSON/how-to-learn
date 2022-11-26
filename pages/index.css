@@ -1,3 +1,4 @@
+@import url(../vendor/normalize.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/digits/digits.css);
 @import url(../blocks/feynman/feynman.css);
@@ -26,7 +27,6 @@
 @import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/root/root.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 @import url(../blocks/section-title/section-title.css);
@@ -66,8 +66,4 @@
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
 @import url(../blocks/resources/__link/resources__link.css);
-
-/*
-техника обучения отступ 3го элемента
-последний блок сделать
-*/
+@import url(../blocks/resources/__logo/resources__logo.css);
