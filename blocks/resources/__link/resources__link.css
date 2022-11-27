@@ -2,3 +2,7 @@
   margin: 0;
   align-items: center;
 }
+
+.resources__link:hover{
+  opacity: 40%;
+}
